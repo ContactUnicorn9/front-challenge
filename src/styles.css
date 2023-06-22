@@ -1,0 +1,28 @@
+.title {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.component_container {
+  position: relative;
+}
+
+.main {
+  display: grid;
+  gap: 1em;
+}
+
+button {
+  margin: 1rem;
+  align-items: center;
+  height: 40px;
+  border-radius: 25%;
+  border: none;
+  font-size: 1rem;
+}
+button:hover {
+  cursor: pointer;
+}
+.draggable{
+  background-size: cover !important;
+}
