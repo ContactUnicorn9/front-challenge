@@ -5,6 +5,7 @@ let cont = 0
 const App = () => {
   const [moveableComponents, setMoveableComponents] = useState([]);
   const [selected, setSelected] = useState(null);
+  console.log(selected)
 
   const addMoveable = async () => {
     let id;
@@ -85,6 +86,7 @@ const App = () => {
   const handleDelete = (index) => {
     moveableComponents.splice(index, 1)
     setMoveableComponents([...moveableComponents])
+    setSelected(null)
   }
 
   return (
